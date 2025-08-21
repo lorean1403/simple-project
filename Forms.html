@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Flexbox Navbar -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Grid Project Section -->
+  <section id="projects" class="gallery">
+    <div class="card">Project 1</div>
+    <div class="card">Project 2</div>
+    <div class="card">Project 3</div>
+    <div class="card">Project 4</div>
+    <div class="card">Project 5</div>
+    <div class="card">Project 6</div>
+  </section>
+
+  <!-- HTML5 Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="you@example.com" required>
+
+
+
+      <label for="range">Budget (0–1000):</label>
+      <input id="range" type="range" min="0" max="1000" step="50" value="500" oninput="output.value = range.value">
+      <output id="output">500</output>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+
+</html>
